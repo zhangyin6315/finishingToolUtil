@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <aliyun.oss.version>3.6.0</aliyun.oss.version>
   </properties>
 <parent>
 	    <groupId>org.springframework.boot</groupId>
@@ -51,6 +52,12 @@
 				</exclusion>
 			</exclusions>
 			<scope>compile</scope>
+		</dependency>
+		<!-- 阿里云OSS -->
+		<dependency>
+			<groupId>com.aliyun.oss</groupId>
+			<artifactId>aliyun-sdk-oss</artifactId>
+			<version>${aliyun.oss.version}</version>
 		</dependency>
     <!--集成springmvc框架并实现自动配置 -->
 		<dependency>
